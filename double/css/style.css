@@ -1,0 +1,132 @@
+/** {
+
+  margin: 0;
+Сбросили все значения для margin чтобы указывать самостоятельно
+}*/
+
+
+p {
+  background-color: #bbd6;
+  font-size: 18px;
+  display: inline;
+  /*inline сделал элементы в одну строку построчно как в span*/
+  /*margin: 30px;*/
+  /*padding: 30px;
+  padding расширил конетнт по контейнеру*/
+
+  /* margin: 30px;  
+   margin — внешний отступ. Отодвигает блок от других элементов, например, от меню, футера, шапки и т.п. */
+
+/* padding: 30px;  
+   padding — внутренний отступ. Отодвигает содержимое блока (например, текст) от его границ или рамки. 
+   Это делает текст внутри более читаемым и не прижатым к краям. */
+}
+
+body {
+
+  /*margin: 0;*/
+}
+
+img {
+  border-radius: 10px;
+
+
+
+
+}
+
+.conteiner {
+  /*display: inline; /*Для свойства inline не применимы свойства ширины и высоты а их задача обтекать контент, но inline-block позволяет управвлять шириной и высотой и можно сделать автоматический размер ширины отображаемого контента и вложенные элементы могут быть по ширине выровнены, блочные свойства занимают всю ширину а inline по ширине контента*/*/
+  /*text-align: center;*/
+  display: inline-block;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 100px;
+  margin: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 3%;
+  background-color: #bbdd66;
+  color: violet;
+  text-align: center; /* text-align в div так же центрирует и изображение*/
+  flex-wrap: wrap;
+  gap: 10px; /* Расстояние между карточками */
+  
+ 
+
+}
+
+
+.text-block {
+  display: flex;
+  flex-direction: column; /* Столбиком */
+  justify-content: flex-start;
+}
+
+.text-block p {
+  background-color: #bbd6;
+  font-size: 12px;
+  margin: 6px 0;
+  padding: 6px 12px;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  height:100px;
+
+
+}
+
+
+/*Сделали отступ от краев слева и справа с помощью свойства margin и указали 30 px а если указать 0 px то налезут на друг-друга то есть близко без отступов*/
+
+
+.main {
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 100px;
+  display: flex-end; 
+  flex-direction: column; /*по умолчанию row а column в ряд делает*/
+  justify-content: center; /* работает только с flex */
+  height: 100px;
+  object-fit: cover; /* если хочешь обрезать по контейнеру */
+  border-radius: 10px;
+  border-size: 10px;
+  border: 4px solid green; /* толщина, стиль, цвет */
+  border-radius: 10px;    /* скругление, если нужно */
+}
+
+.conteiner> img { /* обращаемся к классу и тегу img*/
+  width: 300px;
+  max-width: 500px; /* максимальная ширина и с ней нельзя масштабироваться больше*/
+
+
+}
+
+.list-conteiner {
+display: inline-block;
+border-style: solid;
+padding-right: 5px;
+border-width: 0.5px;
+border-radius: 10px; 
+
+
+}
+
+.list-conteiner> p {
+  text-align: center;
+  display: flex-end; 
+
+}

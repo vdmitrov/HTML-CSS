@@ -1,0 +1,94 @@
+body { 
+  background-color: #ff1;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+
+  p {
+    border: 3px solid powderblue;
+    padding: 3px;
+    margin: 20px;
+    font-family: verdana;
+    font-size: 50%;
+
+}
+  
+
+#p01 {
+  color: blue;
+  font-size: 15%;
+}
+
+p.error {
+  color: red;
+}
+
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#2196F3;
+  padding:10px;
+  float:left;
+  width:10%;
+  heignt: 10% /* The width is 20%, by default */
+}
+
+.main {
+  background-color:#f1f1f1;
+  padding:10px;
+  float:left;
+  width:15%;
+  height: 10% /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:10px;
+  float:left;
+  width:10%;
+  height: 10% /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

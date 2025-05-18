@@ -1,0 +1,53 @@
+/* Стили для всех элементов <span> на странице */
+span {
+  /* Делает текст наклонным, как курсив с помощью font-style */
+  font-style: italic;
+
+  background-color: yellow;
+  /*Делает фон текста жёлтым*/
+
+  color: red;
+
+  /* Делает текст жирным с помощью font-weight */
+  font-weight: bold;
+}
+
+/* Стили для всего тела страницы body */
+
+body {
+  /* Устанавливает darkblue как цвет фона */
+  background-color: darkblue;
+}
+
+.bold-text {
+  font-size: 15px;
+  color: purple;
+  font-weight: italic;
+  display: flex; /*оно сдвинуло влево а фон на всю ширину*/
+}
+
+menu {
+  display: flex;
+  font-size: 100%;
+}
+
+.tms {
+justify-content: flex-end;
+display: none;
+display: flex;
+
+}
+
+
+img {
+  justify-content: center;
+  display: flex;
+}
+
+ol {
+  list-style: lower-latin;
+
+
+}
+/*Когда обращение к тегу то tag {} а если к классу, то .tag {}*/
+
